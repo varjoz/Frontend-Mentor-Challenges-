@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600&display=swap');
+
+.wrapper {
+    width: 1440px;
+    margin: 50px auto;
+}
+
+.upperbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 73px;
+}
+
+.title--box {
+    width: 445px;
+    height: 245px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 125px;
+}
+
+.title--box h1 {
+    font-family: 'league spartan';
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    color: hsl(300, 43%, 22%);
+    vertical-align: text-top;
+}
+
+.title--box p {
+    margin-top: 16px;
+    color: #927B91;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: -0.63px;
+}
+
+
+/************ Rateings *********/
+.rateings {
+    width: 540px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rateing {
+    background-color: rgb(247,242,248);
+    width: 445px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+}
+.rateing:first-child {
+    align-self: start;
+    animation-delay: 250ms;
+}
+.rateing:nth-child(2) {
+    align-self: center;
+    animation-delay: 500ms;
+}
+.rateing:last-child {
+    align-self: end;
+    animation-delay: 750ms;
+}
+
+.stars {
+    width: 117px;
+    height: 16px;
+    margin-left: 32px;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.stars img {
+    width: 16px;
+    height: 16px;
+}
+
+.rateing--text {
+    font-family: 'league spartan';
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 32px;
+}
+
+
+/************* Judgments ************/
+.judgments {
+    height: 266px;
+    display: flex;
+    justify-content: center;
+}
+
+.judgment {
+    background-color: #512051;
+    width: 286px;
+    height: 170px;
+    padding: 40px 32px 35px 32px;
+}
+
+.judgment:first-child {
+    align-self: self-start;
+    margin-right: 30px;
+}
+.judgment:nth-child(2) {
+    align-self: center;
+    margin-right: 30px;
+}
+.judgment:last-child {
+    align-self: self-end;
+}
+
+.card {
+    display: flex;
+}
+
+.card img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 23px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 31px;
+}
+
+h3 {
+    font-family: 'league spartan';
+    font-size: 17px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 4px;
+}
+
+h3:nth-child(2) {
+    color: #EE69A4;
+    font-weight: 400;
+}
+
+.judgment p {
+    font-size: 17px;
+    font-weight: 500px;
+    line-height: 22px;
+    letter-spacing: -0.3;
+    color: #FFFFFF;
+}
+
+
+/********MOBILE**********/
+@media (max-width: 375px) {
+    .wrapper {
+        margin: 25px;
+        max-width: 375px;
+    }
+
+    .upperbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        margin-bottom: 49px;
+    }
+
+    .title--box {
+        width: 327px;
+        height: 219px;
+    }
+
+    .title--box h1 {
+        font-size: 40px;
+        line-height: 32px;
+        letter-spacing: -1.43px;
+        text-align: center;
+        padding: 0 10px;
+    }
+    
+    .title--box p {
+        margin-top: 17px;
+        text-align: center;
+        margin-bottom: 39px;
+    }
+    
+
+    /* Rateings */
+    .rateings {
+        width: 327px;
+        height: 266px;
+    }
+    
+    .rateing {
+        width: 327px;
+        height: 78px;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .stars {
+        margin-left: 0px;
+    }
+    
+    .rateing--text {
+        margin-left: 0px;
+    }
+    
+
+    /* Judgments*/
+    .judgments {
+        height: 776px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .judgment {
+        width: 263px;
+        height: 173px;
+        padding: 40px 32px 35px 32px;
+    }
+    
+    .judgment:first-child {
+        margin-right: 0;
+    }
+    .judgment:nth-child(2) {
+        align-self: auto;
+        margin-right: 0;
+    }
+    .judgment:last-child {
+        align-self: auto;
+    }
+}
+

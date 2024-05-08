@@ -1,0 +1,188 @@
+body {
+    font-family: space-grotesk;  
+}
+
+.wrapper {
+    width: 1440px;
+    height: 900px;
+    margin: auto;
+    background-image: url("/images/bg-main-desktop.png");
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    letter-spacing: 3px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 18px;
+}
+
+/* remove arrows from input fields */ /*Itt hibat jelez, nem tudom, h miert?*/
+input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+               -webkit-appearance: none;
+                margin: 0;
+        }
+ 
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+
+/**************************** Cards */
+.cards {
+    width: 541px;
+    height: 527px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 164px;
+}
+
+
+.card {
+    width: 447px;
+    height: 245px;
+    background-image: url("/images/bg-card-front.png");
+}
+
+.card:last-child {
+    background-image: url("/images/bg-card-back.png");
+    align-self: end;
+}
+
+.card img {
+    width: 84px;
+    height: 47px;
+    margin-top: 28px;
+    margin-left: 32px;
+}
+
+.card h2 {
+    margin-top: 64px;
+    margin-left: 32px;
+}
+
+.card__name {
+    margin-top: 25.5px;
+    margin-left: 32px;
+    width: 383px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pin {
+    width: 32px;
+    height: 18px;
+    padding-left: 358px;
+    padding-top: 111px;
+    right: 0;
+}
+
+/**************************** Details */
+label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 9px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 127px;
+    /* width: 381px; */
+    height: 352px;
+    width: 381px;
+}
+
+.details__name {
+    display: flex;
+    flex-direction: column;
+}
+
+.details__cardnumber {
+    display: flex;
+    flex-direction: column;
+}
+
+.details__cardnumber {
+    margin-top: 26px;
+}
+
+.details input{
+    height: 42px;
+    border: 1px solid rgb(233, 233, 233);
+    border-radius: 10px;
+    padding-left: 16px;
+}
+
+::placeholder { 
+    color: #21092F;
+    opacity: 0.25; 
+  }
+
+.details__name input, .details__cardnumber input {
+    width: 361px;
+}
+
+.details__more {
+    margin-top: 26px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.exp_date {
+    width: 170px;
+    height: 69px;
+}
+
+.exp_date input {
+    margin-top: 9px;
+    width: 62px;
+    height: 45px;
+}
+
+.CVC {
+    width: 191px;
+    height: 69px;
+}
+
+.CVC input {
+    margin-top: 9px;
+    width: 171px;
+    height: 45px;
+}
+
+
+button {
+    margin-top: 40px;
+    width: 381px;
+    height: 53px;
+    background: #21092F;
+    border-radius: 10px;
+    border: 0;
+    font-weight: 500;
+    color: white;
+    font-size: 18px;
+  }
+  /* a gomb nincs kesz */

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.cdnfonts.com/css/space-grotesk" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="cards">
+      <div class="card">
+        <img src="./images/card-logo.svg" alt="logo">
+        <h2>0000 0000 0000 000</h2>
+        <div class="card__name">
+          <h3>Jane Appleseed</h3>
+          <h3>00/00</h3>
+        </div>
+      </div>
+      <div class="card">
+        <div class="pin">
+          <h3>000</h3>
+        </div>
+      </div>  
+    </div>
+
+    <div class="details">
+      <div class="details__name">
+        <label for="name">Cardholder Name</label>
+        <input type="text" name="name" id="name" placeholder="e.g. Jane Appleseed">
+      </div>
+      
+      <div class="details__cardnumber">
+        <label for="number">Card Number</label>
+        <input type="number" name="number" id="number" placeholder="e.g. 1234 5678 9123 0000">
+      </div>
+      
+      <div class="details__more">
+        <div class="exp_date">
+          <label for="exp_date">Exp. Date (MM/YY)</label>
+          <input type="text" name="exp_mounth" id="exp_mounth" placeholder="MM" min="1" max="12" maxlength="2">
+          <input type="text" name="exp_year" id="exp_year" placeholder="YY" min="23" max="28" maxlength="2">
+        </div>
+
+        <div class="CVC">
+          <label for="CVC">CVC</label>
+          <input type="text" name="CVC" id="CVC" placeholder="e.g. 123" maxlength="3">           
+        </div>  
+      
+        <!-- <div class="button"></div> -->
+      </div>  
+      <button>Confirm</button>
+    </div>
+      
+  <!-- Completed state start -->
+  <!-- Thank you!  We've added your card details  Continue -->
+  
+</div>
+  <div class="attribution">
+    <br>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.Coded by <a href="#">Jocaj</a>.
+  </div>
+</body>
+</html>
